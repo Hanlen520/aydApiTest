@@ -4,7 +4,6 @@
 # @FileName: relyData.py
 """处理关联数据"""
 
-import jsonpath_rw
 from jsonpath import jsonpath
 import os
 
@@ -24,12 +23,6 @@ class RelyData:
         :param resp: 响应数据, dict
         :return: 关联值
         '''
-        # jsonpath-rw解析数据
-        # 响应中获取首个匹配到的key，返回一个list
-        # data_list = jsonpath_rw.parse("E_testdata[*].{_key}".format(_key=key)).find(resp)
-        # # 获取list数据的第一个值
-        # data = [match.value for match in data_list][0]
-
         # jsonpath解析数据
         data_list = jsonpath(resp, '$..%s' % key)
         print(data_list)
