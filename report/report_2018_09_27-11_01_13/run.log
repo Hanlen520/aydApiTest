@@ -1,0 +1,380 @@
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_1 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 100, 'realname': 'burrows20', 'phone': 13700000020, 'email': 'burrows20@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 200}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.04
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '49'}
+'09/27/2018 11:01:13 AM' - ERROR - 用例adder_guest_1请求出错: 200 != 10025 : 预计结果不符:【status】预期结果【200】,实际结果【10025】
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_1 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_2 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': None, 'realname': 'burrows20', 'phone': 13700000020, 'email': 'burrows20@est.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'parameter error'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '47'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10021, 'message': 'parameter error'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_2 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_3 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 19, 'realname': None, 'phone': 13700000020, 'email': 'burrows20@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'parameter error'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '47'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10021, 'message': 'parameter error'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_3 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_4 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 19, 'realname': 'burrows20', 'phone': None, 'email': 'burrows20@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'parameter error'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '47'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10021, 'message': 'parameter error'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_4 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_5 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 19, 'realname': 'burrows21', 'phone': 13700000021, 'email': 'burrows21@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10022}, {'check': 'message', 'expect': 'event id null'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.02
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '45'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10022, 'message': 'event id null'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_5 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_6 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 5, 'realname': 'burrows22', 'phone': 13700000022, 'email': 'burrows22@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10023}, {'check': 'message', 'expect': 'event status is not available'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.02
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '61'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10023, 'message': 'event status is not available'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_6 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_7 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 102, 'realname': 'burrows22', 'phone': 13700000022, 'email': 'burrows22@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10024}, {'check': 'message', 'expect': 'event number is full'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.02
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '52'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10024, 'message': 'event number is full'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_7 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 adder_guest_8 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/add_guest
+'09/27/2018 11:01:13 AM' - DEBUG - method: POST
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 101, 'realname': 'burrows23', 'phone': 13700000023, 'email': 'burrows23@test.com'}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10025}, {'check': 'message', 'expect': 'event has started'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.02
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '49'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10025, 'message': 'event has started'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 adder_guest_8 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 get_guest_1 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/get_guest_list
+'09/27/2018 11:01:13 AM' - DEBUG - method: GET
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': 5}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 200}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: phone
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.03
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '338'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 200, 'message': 'success', 'E_testdata': [{'realname': 'burrows2', 'phone': '13700000002', 'email': 'burrows2@test.com', 'sign': False}, {'realname': 'burrows3', 'phone': '13700000003', 'email': 'burrows3@test.com', 'sign': False}, {'realname': 'burrows8', 'phone': '13700000008', 'email': 'burrows8@test.com', 'sign': False}]}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 get_guest_1 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 get_guest_2 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/get_guest_list
+'09/27/2018 11:01:13 AM' - DEBUG - method: GET
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: 
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'eid cannot be empty'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 响应时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:13 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:13 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:13 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '51'}
+'09/27/2018 11:01:13 AM' - INFO - 响应内容: {'status': 10021, 'message': 'eid cannot be empty'}
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################结束测试 get_guest_2 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ####################################开始测试 get_guest_3 ####################################
+'09/27/2018 11:01:13 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:13 AM' - DEBUG - 请求时间: 2018-09-27_11-01-13
+'09/27/2018 11:01:13 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:13 AM' - DEBUG - url: http://192.168.101.4:8000/api/get_guest_list
+'09/27/2018 11:01:13 AM' - DEBUG - method: GET
+'09/27/2018 11:01:13 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:13 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:13 AM' - DEBUG - data: {'eid': None}
+'09/27/2018 11:01:13 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'eid cannot be empty'}]
+'09/27/2018 11:01:13 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '51'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10021, 'message': 'eid cannot be empty'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 get_guest_3 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 get_guest_4 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/get_guest_list
+'09/27/2018 11:01:14 AM' - DEBUG - method: GET
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'phone': '13700000002', 'phone2': '13700000002'}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'eid cannot be empty'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: [{'relyDataSrc': 'phone', 'relyDataDes': 'phone'}, {'relyDataSrc': 'phone', 'relyDataDes': 'phone2'}]
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '51'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10021, 'message': 'eid cannot be empty'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 get_guest_4 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 get_guest_5 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/get_guest_list
+'09/27/2018 11:01:14 AM' - DEBUG - method: GET
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'eid': 19}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 200}, {'check': 'message', 'expect': 'success'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.03
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '53'}
+'09/27/2018 11:01:14 AM' - ERROR - 用例get_guest_5请求出错: 200 != 10022 : 预计结果不符:【status】预期结果【200】,实际结果【10022】
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 get_guest_5 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 get_guest_6 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/get_guest_list
+'09/27/2018 11:01:14 AM' - DEBUG - method: GET
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'eid': 666}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10022}, {'check': 'message', 'expect': 'query result is empty'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.02
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '53'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10022, 'message': 'query result is empty'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 get_guest_6 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 login_1 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/user_login
+'09/27/2018 11:01:14 AM' - DEBUG - method: POST
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'username': 'admin', 'password': 'admin123456'}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 200}, {'check': 'message', 'expect': 'login success'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '44'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 200, 'message': 'login success!'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 login_1 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 login_2 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/user_login
+'09/27/2018 11:01:14 AM' - DEBUG - method: POST
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'username': 'test1234', 'password': 'admin123456'}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10023}, {'check': 'message', 'expect': 'username or password error'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '59'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10023, 'message': 'username or password error!'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 login_2 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 login_3 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/user_login
+'09/27/2018 11:01:14 AM' - DEBUG - method: POST
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'username': 'admin', 'password': 'admin12345678'}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10023}, {'check': 'message', 'expect': 'username or password error'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '59'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10023, 'message': 'username or password error!'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 login_3 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 login_4 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/user_login
+'09/27/2018 11:01:14 AM' - DEBUG - method: POST
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'username': '', 'password': 'admin12345678'}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'username or password can not empty'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '67'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10021, 'message': 'username or password can not empty!'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 login_4 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 login_5 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/user_login
+'09/27/2018 11:01:14 AM' - DEBUG - method: POST
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'username': 'admin', 'password': ''}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'username or password can not empty'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '67'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10021, 'message': 'username or password can not empty!'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 login_5 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################开始测试 login_6 ####################################
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------请求信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 请求时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - module: 用户模块
+'09/27/2018 11:01:14 AM' - DEBUG - url: http://192.168.101.4:8000/api/user_login
+'09/27/2018 11:01:14 AM' - DEBUG - method: POST
+'09/27/2018 11:01:14 AM' - DEBUG - header: {'Accept': 'application/json, text/javascript, */*; q=0.01'}
+'09/27/2018 11:01:14 AM' - DEBUG - cookie: 
+'09/27/2018 11:01:14 AM' - DEBUG - data: {'username': '', 'password': ''}
+'09/27/2018 11:01:14 AM' - DEBUG - validators: [{'check': 'status', 'expect': 10021}, {'check': 'message', 'expect': 'username or password can not empty'}]
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataKey: None
+'09/27/2018 11:01:14 AM' - DEBUG - relyDataVal: None
+'09/27/2018 11:01:14 AM' - DEBUG - ----------------------响应信息: ----------------------
+'09/27/2018 11:01:14 AM' - DEBUG - 响应时间: 2018-09-27_11-01-14
+'09/27/2018 11:01:14 AM' - DEBUG - 响应耗时: 0.01
+'09/27/2018 11:01:14 AM' - INFO - 响应码: 200
+'09/27/2018 11:01:14 AM' - INFO - 响应头: {'Date': 'Thu, 27 Sep 2018 03:01:14 GMT', 'Server': 'WSGIServer/0.2 CPython/3.6.4', 'Content-Type': 'application/json', 'X-Frame-Options': 'SAMEORIGIN', 'Content-Length': '67'}
+'09/27/2018 11:01:14 AM' - INFO - 响应内容: {'status': 10021, 'message': 'username or password can not empty!'}
+'09/27/2018 11:01:14 AM' - DEBUG - ####################################结束测试 login_6 ####################################

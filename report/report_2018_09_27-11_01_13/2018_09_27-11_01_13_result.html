@@ -7104,12 +7104,12 @@ body.skin-3 {
 <script src="https://cdn.bootcss.com/chosen/1.8.2/chosen.jquery.js"></script>
 <script type="text/javascript">
     var resultData = {
-    "testPass": 4,
+    "testPass": 18,
     "testResult": [
         {
             "className": "Users",
-            "methodName": "test_get_guest_00001",
-            "description": "test_get_guest_00001",
+            "methodName": "test_adder_guest_00001",
+            "description": "test_adder_guest_00001",
             "spendTime": "0.047 s",
             "status": "失败",
             "log": [
@@ -7118,18 +7118,98 @@ body.skin-3 {
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\site-packages\\ddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\requests_api_test\\src\\cases\\users.py\", line 30, in test_get_guest\n    self.start(**kw)\n",
-                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\requests_api_test\\src\\util\\runTest.py\", line 82, in start\n    self.rely_data.write_rely_to_file(relyDataKey, res)\n",
-                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\requests_api_test\\src\\base\\relyData.py\", line 44, in write_rely_to_file\n    rely_data = self.get_rely_from_resp(key, resp)\n",
-                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\requests_api_test\\src\\base\\relyData.py\", line 29, in get_rely_from_resp\n    data = [match.value for match in data_list][0]\n",
-                "IndexError: list index out of range\n"
+                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\jtApiTest\\src\\cases\\users.py\", line 25, in test_adder_guest\n    self.start(**kw)\n",
+                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\jtApiTest\\src\\common\\runTest.py\", line 110, in start\n    self.assertEqual(expect, resp_data, msg='预计结果不符:【%s】预期结果【%s】,实际结果【%s】' % (check, expect, resp_data))\n",
+                "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
+                "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
+                "AssertionError: 200 != 10025 : 预计结果不符:【status】预期结果【200】,实际结果【10025】\n"
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00002",
+            "description": "test_adder_guest_00002",
+            "spendTime": "0.008 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00003",
+            "description": "test_adder_guest_00003",
+            "spendTime": "0.008 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00004",
+            "description": "test_adder_guest_00004",
+            "spendTime": "0.014 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00005",
+            "description": "test_adder_guest_00005",
+            "spendTime": "0.016 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00006",
+            "description": "test_adder_guest_00006",
+            "spendTime": "0.019 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00007",
+            "description": "test_adder_guest_00007",
+            "spendTime": "0.02 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_adder_guest_00008",
+            "description": "test_adder_guest_00008",
+            "spendTime": "0.022 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_get_guest_00001",
+            "description": "test_get_guest_00001",
+            "spendTime": "0.048 s",
+            "status": "成功",
+            "log": [
+                ""
             ]
         },
         {
             "className": "Users",
             "methodName": "test_get_guest_00002",
             "description": "test_get_guest_00002",
-            "spendTime": "0.01 s",
+            "spendTime": "0.008 s",
             "status": "成功",
             "log": [
                 ""
@@ -7139,7 +7219,7 @@ body.skin-3 {
             "className": "Users",
             "methodName": "test_get_guest_00003",
             "description": "test_get_guest_00003",
-            "spendTime": "0.008 s",
+            "spendTime": "0.012 s",
             "status": "成功",
             "log": [
                 ""
@@ -7149,7 +7229,7 @@ body.skin-3 {
             "className": "Users",
             "methodName": "test_get_guest_00004",
             "description": "test_get_guest_00004",
-            "spendTime": "0.012 s",
+            "spendTime": "0.013 s",
             "status": "成功",
             "log": [
                 ""
@@ -7159,7 +7239,7 @@ body.skin-3 {
             "className": "Users",
             "methodName": "test_get_guest_00005",
             "description": "test_get_guest_00005",
-            "spendTime": "0.02 s",
+            "spendTime": "0.035 s",
             "status": "失败",
             "log": [
                 "",
@@ -7167,8 +7247,8 @@ body.skin-3 {
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 59, in testPartExecutor\n    yield\n",
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 605, in run\n    testMethod()\n",
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\site-packages\\ddt.py\", line 145, in wrapper\n    return func(self, *args, **kwargs)\n",
-                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\requests_api_test\\src\\cases\\users.py\", line 30, in test_get_guest\n    self.start(**kw)\n",
-                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\requests_api_test\\src\\util\\runTest.py\", line 103, in start\n    self.assertEqual(expect, resp_data, msg='预计结果不符:【%s】预期结果【%s】,实际结果【%s】' % (check, expect, resp_data))\n",
+                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\jtApiTest\\src\\cases\\users.py\", line 30, in test_get_guest\n    self.start(**kw)\n",
+                "  File \"F:\\my_py_proj\\interfaceTest_py3_django\\test_demo\\jtApiTest\\src\\common\\runTest.py\", line 110, in start\n    self.assertEqual(expect, resp_data, msg='预计结果不符:【%s】预期结果【%s】,实际结果【%s】' % (check, expect, resp_data))\n",
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 829, in assertEqual\n    assertion_func(first, second, msg=msg)\n",
                 "  File \"D:\\Program Files (x86)\\python36\\lib\\unittest\\case.py\", line 822, in _baseAssertEqual\n    raise self.failureException(msg)\n",
                 "AssertionError: 200 != 10022 : 预计结果不符:【status】预期结果【200】,实际结果【10022】\n"
@@ -7178,7 +7258,67 @@ body.skin-3 {
             "className": "Users",
             "methodName": "test_get_guest_00006",
             "description": "test_get_guest_00006",
-            "spendTime": "0.021 s",
+            "spendTime": "0.02 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_login_00001",
+            "description": "test_login_00001",
+            "spendTime": "0.012 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_login_00002",
+            "description": "test_login_00002",
+            "spendTime": "0.008 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_login_00003",
+            "description": "test_login_00003",
+            "spendTime": "0.009 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_login_00004",
+            "description": "test_login_00004",
+            "spendTime": "0.015 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_login_00005",
+            "description": "test_login_00005",
+            "spendTime": "0.007 s",
+            "status": "成功",
+            "log": [
+                ""
+            ]
+        },
+        {
+            "className": "Users",
+            "methodName": "test_login_00006",
+            "description": "test_login_00006",
+            "spendTime": "0.008 s",
             "status": "成功",
             "log": [
                 ""
@@ -7186,10 +7326,10 @@ body.skin-3 {
         }
     ],
     "testName": "接口测试",
-    "testAll": 6,
+    "testAll": 20,
     "testFail": 2,
-    "beginTime": "2018-09-26 14:34:24",
-    "totalTime": "0s",
+    "beginTime": "2018-09-27 11:01:13",
+    "totalTime": "1s",
     "testSkip": 0,
     "testError": 0
 };

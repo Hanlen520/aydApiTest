@@ -50,7 +50,7 @@ class OperJson:
 
     def setup_data(self):
         """初始化rele_data.json数据"""
-        with open(self.rely_data, 'a') as fp:
+        with open(self.rely_data, 'w') as fp:
             fp.write(json.dumps({}))
 
 if __name__ == "__main__":
@@ -59,9 +59,9 @@ if __name__ == "__main__":
 
     op_json = OperJson()
     # # print(op_json.read_jsondata("hehe"))
-    op_json.append_data_to_jsonfile(test_data)
-    op_json.append_data_to_jsonfile(test_data2)
-    # op_json.setup_data()
+    # op_json.append_data_to_jsonfile(test_data)
+    # op_json.append_data_to_jsonfile(test_data2)
+    op_json.setup_data()
 
 
 

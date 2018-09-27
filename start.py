@@ -15,6 +15,7 @@ import configparser
 from BeautifulReport import BeautifulReport
 from base.operFile import OperFile
 from base.operSendmail import SendEmail
+from base.operJson import OperJson
 
 rootDir = os.path.dirname(os.path.abspath(__file__))
 yamlDir = rootDir + '\\' + 'data' + '\\' + 'caseData' + '\\'
@@ -63,9 +64,12 @@ if __name__ == "__main__":
     # 初始化接口测试数据
     # test_data.init_data()
 
-    # 初始化日志
+    # 初始化日志等文件
     op_file = OperFile()
     op_file.trunc_file(log_path)
+
+    op_json = OperJson()
+    op_json.setup_data()
 
     # 运行测试
     args_list = sys.argv
