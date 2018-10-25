@@ -3,7 +3,7 @@
   desc: "登录成功"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/user_login
+      url: http://192.168.102.111:8000/api/user_login
       method: POST
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -19,7 +19,7 @@
   desc: "用户名错误"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/user_login
+      url: http://192.168.102.111:8000/api/user_login
       method: POST
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -35,7 +35,7 @@
   desc: "密码错误"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/user_login
+      url: http://192.168.102.111:8000/api/user_login
       method: POST
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -51,7 +51,7 @@
   desc: "用户名为空"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/user_login
+      url: http://192.168.102.111:8000/api/user_login
       method: POST
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -67,7 +67,7 @@
   desc: "密码为空"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/user_login
+      url: http://192.168.102.111:8000/api/user_login
       method: POST
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -83,7 +83,7 @@
   desc: "参数为空"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/user_login
+      url: http://192.168.102.111:8000/api/user_login
       method: POST
       header:
           Accept: application/json, text/javascript, */*; q=0.01

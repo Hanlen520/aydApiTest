@@ -3,7 +3,7 @@
   desc: "查询成功"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/get_guest_list
+      url: http://192.168.102.111:8000/api/get_guest_list
       method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -18,7 +18,7 @@
   desc: "参数为空"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/get_guest_list
+      url: http://192.168.102.111:8000/api/get_guest_list
       method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -31,7 +31,7 @@
   desc: "eid为空"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/get_guest_list
+      url: http://192.168.102.111:8000/api/get_guest_list
       method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -46,7 +46,7 @@
   desc: "eid为空查询phone"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/get_guest_list
+      url: http://192.168.102.111:8000/api/get_guest_list
       method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -64,7 +64,7 @@
   desc: "eid存在phone为空"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/get_guest_list
+      url: http://192.168.102.111:8000/api/get_guest_list
       method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
@@ -79,7 +79,7 @@
   desc: "event状态不可用"
   module: "用户模块"
   request:
-      url: http://192.168.101.4:8000/api/get_guest_list
+      url: http://192.168.102.111:8000/api/get_guest_list
       method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
