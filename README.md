@@ -29,20 +29,36 @@
     BeautifulReport
 
 * 用例demo
-testlogin.yaml
--  # 表示一个case
-  case_id: login_1              # 用例编号
-  desc: "登录成功"               # 用例描述
-  module: "用户模块"             # 测试模块
-  request:                      # 请求内容
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
+-   # 被需要关联数据的用例
+  case_id: get_guest_1
+  desc: "查询成功"
+  module: "用户模块"
+  request:
+      url: http://192.168.102.111:8000/api/get_guest_list
+      method: GET
       header:
           Accept: application/json, text/javascript, */*; q=0.01
       data:
-          username: "admin"
-          password: "admin123456"
-  validators:                   # 断言信息
+          eid: 5
+  relyDataKey: "phone"  # 被关联数据在响应中的字段名
+  validators:
       - {"check": "status", "expect": 200}
-      - {"check": "message", "expect": "login success"}
 
+
+-    # 需要关联数据的用例
+  case_id: get_guest_4      # 用例编号
+  desc: "eid为空查询phone"
+  module: "用户模块"
+  request:                  # 用例描述
+      url: http://192.168.102.111:8000/api/get_guest_list
+      method: GET
+      header:
+          Accept: application/json, text/javascript, */*; q=0.01
+      data:                 # 测试模块
+          phone: 13700000004
+  validators:               # 请求内容
+      - {"check": "status", "expect": 10021}
+      - {"check": "message", "expect": "eid cannot be empty"}
+  relyDataVal:              # 如果有关联数据，写在这里
+      - {"relyDataSrc": "phone", "relyDataDes": "phone"}  # relyDataSrc：需要关联数据的字段,relyDataDes：需要替换数据的字段
+      - {"relyDataSrc": "phone", "relyDataDes": "phone2"}
