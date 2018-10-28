@@ -2,7 +2,7 @@
     - jtApiTest ，基于python3+requests+unnittest+yaml+ddt封装的接口自动化测试框架
 
 * # 最新版本与修改
-    -- v0.5
+    - # v0.5
         - 1.新增单个接口过滤的skip
         - 2.修改Beautiful源码，调整报告输出增加请求体、响应体、caseid、case_desc等详细信息
         - 3.用例运行响应时间精确到ms
@@ -11,7 +11,7 @@
         - 6.yaml增加skip过滤单个用例功能
         - 7.调整关联逻辑.
 
-    -- v0.1
+    - # v0.1
         - 1.构建框架基本结构 python+requests+unittest+yaml+ddt.
         - 2.完成demo用例输出.
 
