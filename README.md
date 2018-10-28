@@ -1,27 +1,28 @@
-* 框架简介：jtApiTest ，基于python3+requests+unnittest+yaml+ddt封装的接口自动化测试框架
+* # 框架简介
+    - jtApiTest ，基于python3+requests+unnittest+yaml+ddt封装的接口自动化测试框架
 
-* 最新版本与修改
-    - # v0.5
-        - 1.新增单个接口过滤的skip -- ok
+* # 最新版本与修改
+    -- v0.5
+        - 1.新增单个接口过滤的skip
         - 2.修改Beautiful源码，调整报告输出增加请求体、响应体、caseid、case_desc等详细信息
-        - 3.用例运行响应时间精确到ms -- ok
-        - 4.简化yaml，抽取case公共数据 -- ok
-        - 5.优化日志输出格式 -- ok
+        - 3.用例运行响应时间精确到ms
+        - 4.简化yaml，抽取case公共数据
+        - 5.优化日志输出格式
         - 6.yaml增加skip过滤单个用例功能
         - 7.调整关联逻辑.
 
-    - # v0.1
+    -- v0.1
         - 1.构建框架基本结构 python+requests+unittest+yaml+ddt.
         - 2.完成demo用例输出.
 
-* 框架特色
+* # 框架特色
     - 灵活配置：支持以配置文件的方式管理配置，如日志配置与email配置等
     - 报告记录：测试结果报告记录丰富，包含 测试概览报告 与 测试详细报告 等，简单易读
     - 邮件支持：支持基于smtp的方式发送email
     - 兼容性强：基于requests模块进行测试，并集成yaml与ddt进行数据驱动
     - 扩展性强：基于python3开发，方便后续对框架功能的扩展
 
-* 目录结构
+* # 目录结构
     - /conf         ： 配置文件目录，包含构建配置、邮件配置、日志配置等
     - /data         ： 数据文件目录，包括用例数据管理文件夹caseData、公共数据管理文件夹pubData等
     - /log          ： 运行时日志目录
@@ -30,10 +31,10 @@
     - start.py      ： 框架执行入口
     - README.MD     ： 框架简介
 
-* 运行环境
+* # 运行环境
     - python3.6+
 
-* 运行依赖
+* # 运行依赖
     - unittest
     - requests 2.18.4+
     - pyyaml 3.13+
@@ -42,7 +43,7 @@
     - configparser
     - BeautifulReport
 
-* 用例demo
+* # 用例demo
     -   # 被需要关联数据的用例demo
       case_id: get_guest_1
       desc: "查询成功"
