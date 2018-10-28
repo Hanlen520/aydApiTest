@@ -25,7 +25,7 @@ class RelyData:
         '''
         # jsonpath解析数据
         data_list = jsonpath(resp, '$..%s' % key)
-        print(data_list)
+        # print(data_list)
         return data_list[0]
 
     def get_rely_from_file(self, key):
@@ -35,13 +35,14 @@ class RelyData:
         data = self.op_json.read_jsondata(key)
         return data
 
-    def write_rely_to_file(self, key, resp):
+    def write_rely_to_file(self, relyKey, keepKey, resp):
         '''
-        :param key: 写入关联数据到文件
+        :param key: 关联的字段名
+        :param keep: 保存的字段名
         :param resp: 响应数据, dict
         '''
-        rely_data = self.get_rely_from_resp(key, resp)
-        self.rely_dict[key] = rely_data
+        rely_data = self.get_rely_from_resp(relyKey, resp)
+        self.rely_dict[keepKey] = rely_data
         self.op_json.append_data_to_jsonfile(self.rely_dict)
         return rely_data
 

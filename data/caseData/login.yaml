@@ -1,15 +1,9 @@
 -
   case_id: login_1
   desc: "登录成功"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          username: "admin"
-          password: "admin123456"
+  request_data:
+        username: "admin"
+        password: "admin123456"
   validators:
       - {"check": "status", "expect": 200}
       - {"check": "message", "expect": "login success"}
@@ -17,15 +11,9 @@
 -
   case_id: login_2
   desc: "用户名错误"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          username: "test1234"
-          password: "admin123456"
+  request_data:
+        username: "test1234"
+        password: "admin123456"
   validators:
       - {"check": "status", "expect": 10023}
       - {"check": "message", "expect": "username or password error"}
@@ -33,15 +21,9 @@
 -
   case_id: login_3
   desc: "密码错误"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          username: "admin"
-          password: "admin12345678"
+  request_data:
+        username: "admin"
+        password: "admin12345678"
   validators:
       - {"check": "status", "expect": 10023}
       - {"check": "message", "expect": "username or password error"}
@@ -49,13 +31,7 @@
 -
   case_id: login_4
   desc: "用户名为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
+  request_data:
           username: ""
           password: "admin12345678"
   validators:
@@ -65,15 +41,9 @@
 -
   case_id: login_5
   desc: "密码为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          username: "admin"
-          password: ""
+  request_data:
+        username: "admin"
+        password: ""
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "username or password can not empty"}
@@ -81,15 +51,10 @@
 -
   case_id: login_6
   desc: "参数为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/user_login
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          username: ""
-          password: ""
+  skip: 1
+  request_data:
+        username: ""
+        password: ""
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "username or password can not empty"}

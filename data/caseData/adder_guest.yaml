@@ -1,34 +1,23 @@
 -
   case_id: adder_guest_1
   desc: "添加成功"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 100
-          realname: "burrows20"
-          phone: 13700000020
-          email: "burrows20@test.com"
+  request_data:
+        eid: 100
+        realname: "burrows20"
+        phone: 13700000020
+        email: "burrows20@test.com"
   validators:
       - {"check": "status", "expect": 200}
 
 -
   case_id: adder_guest_2
   desc: "eid为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid:
-          realname: "burrows20"
-          phone: 13700000020
-          email: "burrows20@est.com"
+  skip: 1
+  request_data:
+        eid:
+        realname: "burrows20"
+        phone: 13700000020
+        email: "burrows20@est.com"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
@@ -36,17 +25,11 @@
 -
   case_id: adder_guest_3
   desc: "realname为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 19
-          realname:
-          phone: 13700000020
-          email: "burrows20@test.com"
+  request_data:
+        eid: 19
+        realname:
+        phone: 13700000020
+        email: "burrows20@test.com"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
@@ -54,17 +37,11 @@
 -
   case_id: adder_guest_4
   desc: "phone为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 19
-          realname: "burrows20"
-          phone:
-          email: "burrows20@test.com"
+  request_data:
+        eid: 19
+        realname: "burrows20"
+        phone:
+        email: "burrows20@test.com"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
@@ -72,17 +49,11 @@
 -
   case_id: adder_guest_5
   desc: "eid不存在"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 19
-          realname: "burrows21"
-          phone: 13700000021
-          email: "burrows21@test.com"
+  request_data:
+        eid: 19
+        realname: "burrows21"
+        phone: 13700000021
+        email: "burrows21@test.com"
   validators:
       - {"check": "status", "expect": 10022}
       - {"check": "message", "expect": "event id null"}
@@ -90,17 +61,11 @@
 -
   case_id: adder_guest_6
   desc: "event状态不可用"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 5
-          realname: "burrows22"
-          phone: 13700000022
-          email: "burrows22@test.com"
+  request_data:
+        eid: 5
+        realname: "burrows22"
+        phone: 13700000022
+        email: "burrows22@test.com"
   validators:
       - {"check": "status", "expect": 10023}
       - {"check": "message", "expect": "event status is not available"}
@@ -108,17 +73,11 @@
 -
   case_id: adder_guest_7
   desc: "event的嘉宾数已满"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 102
-          realname: "burrows22"
-          phone: 13700000022
-          email: "burrows22@test.com"
+  request_data:
+        eid: 102
+        realname: "burrows22"
+        phone: 13700000022
+        email: "burrows22@test.com"
   validators:
       - {"check": "status", "expect": 10024}
       - {"check": "message", "expect": "event number is full"}
@@ -126,17 +85,11 @@
 -
   case_id: adder_guest_8
   desc: "event已过期"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_guest
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 101
-          realname: "burrows23"
-          phone: 13700000023
-          email: "burrows23@test.com"
+  request_data:
+        eid: 101
+        realname: "burrows23"
+        phone: 13700000023
+        email: "burrows23@test.com"
   validators:
       - {"check": "status", "expect": 10025}
       - {"check": "message", "expect": "event has started"}

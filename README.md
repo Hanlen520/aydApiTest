@@ -29,36 +29,36 @@
     BeautifulReport
 
 * 用例demo
--   # 被需要关联数据的用例
-  case_id: get_guest_1
-  desc: "查询成功"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 5
-  relyDataKey: "phone"  # 被关联数据在响应中的字段名
-  validators:
-      - {"check": "status", "expect": 200}
+    -   # 被需要关联数据的用例demo
+      case_id: get_guest_1
+      desc: "查询成功"
+      skip: 1       # skip值为1表示跳过该用例执行
+      request:
+          url: http://192.168.102.111:8000/api/get_guest_list
+          method: GET
+          header:
+              Accept: application/json, text/javascript, */*; q=0.01
+          data:
+              eid: 5
+      relyDataExport: # 关联输出，即该接口响应返回被其他接口关联字段
+          - {"relyKey": "phone", "keepKey": "MyPhone"}
+      validators:           # 断言设置
+          - {"check": "status", "expect": 200}
 
 
--    # 需要关联数据的用例
-  case_id: get_guest_4      # 用例编号
-  desc: "eid为空查询phone"
-  module: "用户模块"
-  request:                  # 用例描述
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:                 # 测试模块
-          phone: 13700000004
-  validators:               # 请求内容
-      - {"check": "status", "expect": 10021}
-      - {"check": "message", "expect": "eid cannot be empty"}
-  relyDataVal:              # 如果有关联数据，写在这里
-      - {"relyDataSrc": "phone", "relyDataDes": "phone"}  # relyDataSrc：需要关联数据的字段,relyDataDes：需要替换数据的字段
-      - {"relyDataSrc": "phone", "relyDataDes": "phone2"}
+    -    # 需要关联数据的用例demo
+      case_id: get_guest_4      # 用例编号
+      desc: "eid为空查询phone"   # 用例描述
+      request:                  # 请求内容
+          url: http://192.168.102.111:8000/api/get_guest_list
+          method: GET
+          header:
+              Accept: application/json, text/javascript, */*; q=0.01
+          data:                 # 测试模块
+              phone: 13700000004
+      validators:               # 断言设置
+          - {"check": "status", "expect": 10021}
+          - {"check": "message", "expect": "eid cannot be empty"}
+      relyDataImport:  # 关联引入，即该接口运行所需的关联字段设置
+          - {"relyDataSrc": "phone", "relyDataDes": "phone"}  # relyDataSrc：需要关联数据的字段,relyDataDes：需要替换数据的字段
+          - {"relyDataSrc": "phone", "relyDataDes": "phone2"}

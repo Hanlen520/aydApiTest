@@ -1,27 +1,17 @@
 -
   case_id: get_guest_1
   desc: "查询成功"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 5
-  relyDataKey: "phone"  # 被关联数据在响应中的字段名
+  request_data:
+        eid: 5
+  relyDataExport: # 关联输出，即该接口响应返回被其他接口关联字段
+      - {"relyKey": "phone", "keepKey": "MyPhone"}
   validators:
       - {"check": "status", "expect": 200}
 
 -
   case_id: get_guest_2
   desc: "参数为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
+  request_data:
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "eid cannot be empty"}
@@ -29,14 +19,8 @@
 -
   case_id: get_guest_3
   desc: "eid为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid:
+  request_data:
+        eid:
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "eid cannot be empty"}
@@ -44,32 +28,20 @@
 -
   case_id: get_guest_4
   desc: "eid为空查询phone"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          phone: 13700000004
+  request_data:
+        phone: 13700000004
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "eid cannot be empty"}
-  relyDataVal:  # 如果有关联数据，写在这里
+  relyDataImport:  # 关联引入，即该接口运行所需的关联字段设置
       - {"relyDataSrc": "phone", "relyDataDes": "phone"}  # relyDataSrc：需要关联数据的字段,relyDataDes：需要替换数据的字段
       - {"relyDataSrc": "phone", "relyDataDes": "phone2"}
 
 -
   case_id: get_guest_5
   desc: "eid存在phone为空"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 19
+  request_data:
+        eid: 19
   validators:
       - {"check": "status", "expect": 200}
       - {"check": "message", "expect": "success"}
@@ -77,14 +49,8 @@
 -
   case_id: get_guest_6
   desc: "event状态不可用"
-  module: "用户模块"
-  request:
-      url: http://192.168.102.111:8000/api/get_guest_list
-      method: GET
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 666
+  request_data:
+        eid: 666
   validators:
       - {"check": "status", "expect": 10022}
       - {"check": "message", "expect": "query result is empty"}

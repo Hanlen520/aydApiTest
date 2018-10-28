@@ -1,178 +1,125 @@
 -
-  case_id: adder_guest_1
+  case_id: adder_event_1
   desc: "添加成功"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 100
-          name: "测试发布会100"
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time: "2018-6-5 14:00:00"
+  skip: 1
+  request_data:
+        eid: 100
+        name: "测试发布会100"
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 200}
       - {"check": "message", "expect": "add event success"}
 
 -
-  case_id: adder_guest_2
+  case_id: adder_event_2
   desc: "eid为空"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid:
-          name: "测试发布会100"
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time: "2018-6-5 14:00:00"
+  request_data:
+        eid:
+        name: "测试发布会100"
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
 
 -
-  case_id: adder_guest_3
+  case_id: adder_event_3
   desc: "name为空"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 100
-          name:
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time: "2018-6-5 14:00:00"
+  request_data:
+        eid: 100
+        name:
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
 
 -
-  case_id: adder_guest_4
+  case_id: adder_event_4
   desc: "address为空"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 100
-          name: "测试发布会100"
-          limit: 999
-          status: 1
-          address:
-          start_time: "2018-6-5 14:00:00"
+  request_data:
+        eid: 100
+        name: "测试发布会100"
+        limit: 999
+        status: 1
+        address:
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
 
 -
-  case_id: adder_guest_5
+  case_id: adder_event_5
   desc: "address为空"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 100
-          name: "测试发布会100"
-          limit: 999
-          status: 1
-          address:
-          start_time: "2018-6-5 14:00:00"
+  request_data:
+        eid: 100
+        name: "测试发布会100"
+        limit: 999
+        status: 1
+        address:
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
 
 -
-  case_id: adder_guest_6
+  case_id: adder_event_6
   desc: "start_time为空"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 100
-          name: "测试发布会100"
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time:
+  request_data:
+        eid: 100
+        name: "测试发布会100"
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time:
   validators:
       - {"check": "status", "expect": 10021}
       - {"check": "message", "expect": "parameter error"}
 
 -
-  case_id: adder_guest_7
+  case_id: adder_event_7
   desc: "eid已存在"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 5
-          name: "测试发布会100"
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time: "2018-6-5 14:00:00"
+  request_data:
+        eid: 5
+        name: "测试发布会100"
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 10022}
       - {"check": "message", "expect": "event id already exists"}
 
 -
-  case_id: adder_guest_8
+  case_id: adder_event_8
   desc: "name已存在"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 201
-          name: "小米mix2发布会"
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time: "2018-6-5 14:00:00"
+  request_data:
+        eid: 201
+        name: "小米mix2发布会"
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time: "2018-6-5 14:00:00"
   validators:
       - {"check": "status", "expect": 10023}
       - {"check": "message", "expect": "event name already exists"}
 
 -
-  case_id: adder_guest_9
+  case_id: adder_event_9
   desc: "start_time格式错误"
-  module: "发布会模块"
-  request:
-      url: http://192.168.102.111:8000/api/add_event
-      method: POST
-      header:
-          Accept: application/json, text/javascript, */*; q=0.01
-      data:
-          eid: 201
-          name: "小米mix2发布会"
-          limit: 999
-          status: 1
-          address: "深圳体育100馆"
-          start_time: "20180605 14:00:00"
+  request_data:
+        eid: 201
+        name: "小米mix2发布会"
+        limit: 999
+        status: 1
+        address: "深圳体育100馆"
+        start_time: "20180605 14:00:00"
   validators:
       - {"check": "status", "expect": 10024}
