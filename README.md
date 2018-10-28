@@ -1,5 +1,5 @@
 * # 框架简介
-    - jtApiTest ，基于python3+requests+unnittest+yaml+ddt封装的接口自动化测试框架
+    - aydApiTest ，基于python3+requests+unnittest+yaml+ddt封装的接口自动化测试框架
 
 * # 最新版本与修改
     - # v0.5
